@@ -96,7 +96,7 @@ open your project locally : http://localhost/8000 (port and host adjust)
 
 
 ## Authors
-@OsimAkash
+[Osim Akash](https://github.com/OsimAkash)
 
 
 
