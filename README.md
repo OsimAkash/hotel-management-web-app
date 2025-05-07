@@ -31,7 +31,7 @@ This comprehensive hotel web application, developed using the Laravel V8 framewo
 ## Run Locally
 
 
-[Download .zip file]() and extract to your folder
+[Download hotel-management-web-app-main.zip file]() and extract to your folder
 
 OR
 
