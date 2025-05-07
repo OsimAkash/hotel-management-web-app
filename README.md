@@ -31,7 +31,7 @@ This comprehensive hotel web application, developed using the Laravel V8 framewo
 ## Run Locally
 
 
-[Download hotel-management-web-app-main.zip file]() and extract to your folder
+[Download hotel-management-web-app-main.zip file](https://github.com/OsimAkash/hotel-management-web-app/archive/refs/heads/main.zip) and extract it to your folder.
 
 OR
 
@@ -54,7 +54,6 @@ Install Packages
 ```bash
   composer install
 ```
-Copy .env.example to .env
 
 ```bash
   cp .env.example .env
