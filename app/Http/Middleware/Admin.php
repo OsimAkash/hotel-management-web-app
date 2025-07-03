@@ -24,6 +24,6 @@ class Admin
         if(Auth::user()->role == 'admin'){
             return $next($request);
         }
-        return redirect()->back()->with('error',"Anda tidak dapat mengakses halaman ini!");
+        return redirect()->back()->with('error',"You can't access this page!");
     }
 }

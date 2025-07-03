@@ -9,6 +9,11 @@ use App\Http\Controllers\RoomController;
 use App\Http\Controllers\RoomFacilityController;
 use App\Http\Controllers\RoomTypeController;
 use App\Http\Controllers\TransactionController;
+// in routes/web.php
+use App\Http\Controllers\Admin\ProfileController;
+
+// ...
+
 
 /*
 |--------------------------------------------------------------------------
@@ -21,6 +26,10 @@ use App\Http\Controllers\TransactionController;
 |
 */
 
+Route::middleware(['auth', 'admin'])->prefix('admin')->name('admin.')->group(function () {
+// ... your other admin routes
+Route::post('/profile/image', [ProfileController::class, 'uploadImage'])->name('profile.image.upload');
+});
 
 Route::group(['middleware' => 'prevent'], function(){
     Route::get('/', [HomeController::class, 'index'])->name('landing');
