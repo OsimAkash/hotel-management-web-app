@@ -6,7 +6,12 @@
             <div class="card mb-3">
                 <div class="card-header">{{ __('Dashboard Admin') }}</div>
 
-                <div class="card-body">
+                <div class="card-body">@if (Route::has('password.request'))
+                    <a class="btn btn-link" href="{{ route('password.request') }}">
+                        {{ __('Forgot Your Password?') }}
+                    </a>
+                @endif
+                
                     @if (session('status') && !$errors->any())
                         <div class="alert alert-success" role="alert">
                             {{ session('status') }}

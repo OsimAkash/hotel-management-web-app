@@ -6,6 +6,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <link rel="icon" href="image/favicon.png" type="image/png">
         <title>Hotel BD</title>
+
+        <link rel="stylesheet" href="app.css">
+        <script src="app.js"></script>
         <!-- Bootstrap CSS -->
             <!-- CSS -->
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -17,6 +20,7 @@
         <link rel="stylesheet" href="{{ asset('template/vendors/nice-select/css/nice-select.css') }}">
         <link rel="stylesheet" href="{{ asset('template/vendors/owl-carousel/owl.carousel.min.css') }}">
         <link rel="stylesheet" href="{{ asset('template/css/bootstrap.css') }}">
+        <link rel="stylesheet" href="{{ asset('template/css/loading.css') }}">
         {{-- <link rel="stylesheet" href="{{ asset('css/all.css') }}"> --}}
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
 
@@ -25,6 +29,14 @@
         <link rel="stylesheet" href="{{ asset('template/css/responsive.css') }}">
     </head>
     <body>
+
+        <!-- Loding website -->
+
+
+        
+<!-- End Loding website -->
+
+
         <!--================Header Area =================-->
         <header class="header_area">
             <div class="container">
@@ -159,6 +171,7 @@
         <script src="{{ asset('template/js/stellar.js') }}"></script>
         <script src="{{ asset('template/vendors/lightbox/simpleLightbox.min.js') }}"></script>
         <script src="{{ asset('template/js/custom.js') }}"></script>
+        <script src="{{ asset('template/js/loading.js') }}"></script>
         @yield('script')
         <script>
             setTimeout(function() {
