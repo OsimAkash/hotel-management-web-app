@@ -3,12 +3,13 @@ php:
   version: 8
   disabled:
     - no_unused_imports
+  risky: true       # risky fixers চালু করলে আরো strict হবে
   finder:
+    exclude:
+      - bootstrap
+      - storage
+      - vendor
     not-name:
       - index.php
       - server.php
-js:
-  finder:
-    not-name:
-      - webpack.mix.js
-css: true
+      - .env

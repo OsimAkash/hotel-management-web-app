@@ -8,21 +8,16 @@ services:
       php artisan config:cache
       php artisan route:cache
       php artisan view:cache
-      php artisan migrate --force
-    # The 'startCommand' is not needed for a standard Laravel application.
-    # Render's PHP environment automatically uses a production-ready web server (Apache).
-    # Using `php artisan serve` is not recommended for production as it's a development server.
+    startCommand: "" # Not needed; Render uses Apache internally
     envVars:
       - key: APP_ENV
         value: production
       - key: APP_DEBUG
         value: false
       - key: APP_KEY
-        sync: false   # Generate this locally with `php artisan key:generate --show` and set it in the Render dashboard.
+        sync: false   # Generate locally: php artisan key:generate --show
       - key: APP_URL
         value: https://hotel-management-web-app.onrender.com
-      # Add your database credentials below. If you are using a Render Database,
-      # you can link it, and Render will inject the credentials automatically.
       - key: DB_CONNECTION
         value: mysql
       - key: DB_HOST
