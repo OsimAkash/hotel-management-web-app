@@ -40,7 +40,7 @@ class BookingTest extends TestCase
         };
 
         // Create a mock "Booking" for 2 nights.
-        $booking = new \App\Models\Booking($room, new DateTime('2023-10-27'), new DateTime('2023-10-29'));
+        $booking = new \App\Models\Booking(['room' => $room, 'check_in_date' => new DateTime('2023-10-27'), 'check_out_date' => new DateTime('2023-10-29')]);
 
         // 2. Act (Perform the action)
         $totalPrice = $booking->getTotalPrice();
